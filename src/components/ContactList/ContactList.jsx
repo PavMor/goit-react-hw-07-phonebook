@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getContactFilter, getContacts } from 'redux/selectors';
-import { deleteContact } from 'redux/contactsSlice';
+import { deleteContact } from 'redux/contactsOperations';
 import { Btn, Icon, Contacts, ContactsItem, Name, Number } from './ContactList.styled';
 import { FaTrash, FaUserAlt } from 'react-icons/fa';
 
