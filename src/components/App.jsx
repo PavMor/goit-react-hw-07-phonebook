@@ -12,7 +12,7 @@ export const App = () => {
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  
+
   return (
     <Container>
       <Title>Phonebook</Title>
