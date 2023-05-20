@@ -15,14 +15,14 @@ export const ContactList = () => {
   return (
     <>
       <Contacts>
-        {filteredContacts.map(({ id, name, number }) => {
+        {filteredContacts.map(({ id, name, phone }) => {
           return (
             <ContactsItem key={id}>
               <Icon>
                 <FaUserAlt />
               </Icon>
               <Name>{name}</Name>
-              <Number>{number}</Number>
+              <Number>{phone}</Number>
               <Btn type="button" onClick={() => dispatch (deleteContact(id))}>
               <FaTrash />
               </Btn>
